@@ -2,7 +2,7 @@ package edu.br.pucgoias.relatorio.modelo;
 
 public class produto_DTO {
 
-    private Long id;
+    private int id;
     private String nome;
     private double valor;
 
@@ -15,11 +15,11 @@ public class produto_DTO {
         this.valor = produto.getValor();
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

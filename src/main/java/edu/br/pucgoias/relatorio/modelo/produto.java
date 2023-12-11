@@ -13,7 +13,7 @@ public class produto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private int id;
 
 	@Column
 	private String nome;
@@ -23,11 +23,11 @@ public class produto {
 	
 	
 	//Métodos getters e setters
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

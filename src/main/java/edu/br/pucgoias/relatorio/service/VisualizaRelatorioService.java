@@ -37,7 +37,7 @@ public class VisualizaRelatorioService {
                 .collect(Collectors.toList());
 
         // Mudar o classPath de acordo com o arquivo
-        File file = ResourceUtils.getFile("classpath:edu/br/pucgoias/relatorio/Simple_Blue_1.jrxml");
+        File file = ResourceUtils.getFile("classpath:edu/br/pucgoias/relatorio/Simple.jrxml");
         JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
         JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(listProdutosDTO);
 
